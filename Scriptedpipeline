@@ -1,0 +1,5 @@
+node{
+  stages("Build"{
+  echo " builded "
+  }
+}
