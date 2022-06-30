@@ -1,6 +1,13 @@
-node{
-  stage('Build') {
-  echo " pipeline builded here...!"
-  echo "hello this worked right now"
-  }
+pipeline{
+    agent none
+    stages{
+        stage("check"){
+                when{
+                    branch: 'Jenkins'
+                }
+        steps{
+                echo "This branch existed"
+            }
+        }
+    }
 }
