@@ -1,6 +1,6 @@
 FROM python:3.11.6-alpine3.18 
 WORKDIR /app
-#copy the requirements file 
+#copy the requirements files
 COPY Data.txt  
 #install project depencies 
 RUN pip install -r Data.txt
